@@ -1,5 +1,5 @@
 # Self-Balancing-Robot
-This project involves the design and development of a self-balancing two-wheeled robot that operates on the inverted pendulum principle, where continuous real-time feedback and control are used to maintain balance.
+A self-balancing robot based on the inverted pendulum principle using an MPU6050 sensor and PID control. It stays upright by adjusting stepper motors in real-time and can move or turn by altering tilt setpoints. A servo-controlled top plate adds stability during motion.
 
 # Core Concept
 The robot uses the MPU-6050 sensor, which combines a 3-axis gyroscope and a 3-axis accelerometer, to measure the pitch angle (tilt) of the robot. However, both the accelerometer and gyroscope have limitations: the accelerometer is noisy, while the gyroscope drifts over time. To overcome this, a complementary filter is applied to fuse both readings, providing a reliable and smooth estimate of the pitch angle.
@@ -10,7 +10,7 @@ To maintain balance, the robot uses a PID (Proportional-Integral-Derivative) con
 # Motion and Maneuvering
 Forward/Backward Motion: By intentionally shifting the setpoint angle slightly, the robot begins to "fall" in the desired direction. The PID controller interprets this as an error and causes the motors to move accordingly, resulting in forward or backward movement.
 
-# Turning: 
+# Turning
 The robot turns by creating a speed differential between the two wheels. For example, speeding up the right wheel while slowing down the left causes a left turn, and vice versa.
 
 # Additional Features
