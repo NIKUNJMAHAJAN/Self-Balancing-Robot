@@ -10,13 +10,15 @@ To maintain balance, the robot uses a PID (Proportional-Integral-Derivative) con
 # Motion and Maneuvering
 Forward/Backward Motion: By intentionally shifting the setpoint angle slightly, the robot begins to "fall" in the desired direction. The PID controller interprets this as an error and causes the motors to move accordingly, resulting in forward or backward movement.
 
-# Turning: The robot turns by creating a speed differential between the two wheels. For example, speeding up the right wheel while slowing down the left causes a left turn, and vice versa.
+# Turning: 
+The robot turns by creating a speed differential between the two wheels. For example, speeding up the right wheel while slowing down the left causes a left turn, and vice versa.
 
 # Additional Features
 Servo-Controlled Top Plate: A servo motor is used to keep a top-mounted parallel plate level with the ground. It uses the same pitch data to apply a proportional correction, ensuring stable alignment.
 
 
-# Structural Analysis: The robot frame was analyzed using Shear Force Diagrams (SFD) and Bending Moment Diagrams (BMD) to ensure structural integrity. Calculations were made to confirm that material stress levels remain within safe limits under static and dynamic loads.
+# Structural Analysis
+The robot frame was analyzed using Shear Force Diagrams (SFD) and Bending Moment Diagrams (BMD) to ensure structural integrity. Calculations were made to confirm that material stress levels remain within safe limits under static and dynamic loads.
 
 # Conclusion
 This self-balancing robot project successfully combines sensor fusion, control systems, mechatronics, and mechanical design. It demonstrates how feedback control and real-time sensor data can be used to stabilize an inherently unstable system and form the foundation for advanced robotic platforms.
